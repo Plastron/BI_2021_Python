@@ -9,7 +9,7 @@ if table_request == "yes":
 units_check_list = ["year", "month", "day", "hour", "minute", "second", "km", "m", "cm", "mm", "W"]
 while True:
 
-    print("You can convert time (y, w, d, h, m, s), length (km, m, cm, mm), and power (W). \nPlease enter the decimal number you want to convert, then whitespace, and then unit how it was shown in the previous sentence.")
+    print("You can convert time (y, w, d, h, min, s), length (km, m, cm, mm), and power (W). \nPlease enter the decimal number you want to convert, then whitespace, and then unit how it was shown in the previous sentence.")
     #check if there is a whitespace
     try:
         num, unit = input("number unit").split(' ')
@@ -33,8 +33,8 @@ while True:
             print("%s d = %d kovac (kv)" % (num, num * 0.274))
         elif unit == "h":
             print("%s h = %d wolverton (wl)" % (num, num * 11.415))
-        elif unit == "m":
-            print("%s m = %d wolverton (wl)" % (num, num * 0.19))
+        elif unit == "min":
+            print("%s min = %d wolverton (wl)" % (num, num * 0.19))
         elif unit == "s":
             print("%s s = %d wolverton (wl)" % (num, num * 0.0032))
         elif unit == "km":
