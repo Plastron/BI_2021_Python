@@ -28,47 +28,38 @@ while True:
 
     outer_unit = 0
     if unit in units_check_list:
-
-    if unit1 == "cm" and unit2 == "m":
-        ans = float(num1)/100
-        print(ans)
-    elif unit1 == "mm" and unit2 == "cm":
-        ans = float(num1)/10
-        print(ans)
-    elif unit1 == "m" and unit2 == "cm":
-        ans = float(num1)*100
-        print(ans)
-    elif unit1 == "cm" and unit2 == "mm":
-        ans = float(num1)*10
-        print(ans)
-    elif unit1 == "mm" and unit2 == "m":
-        ans = float(num1)/1000
-        print(ans)
-    elif unit1 == "m" and unit2 == "mm":
-        ans = float(num1)*1000
-        print(ans)
-    elif unit1 == "km" and unit2 == "m":
-        ans = float(num1)*1000
-        print(ans)
-    elif unit1 == "m" and unit2 == "km":
-        ans = float(num1)/1000
-        print(ans)
-    elif unit1 == "mm" and unit2 == "km":
-        ans = float(num1)/1000000
-        print(ans)
-    elif unit1 == "ft" and unit2 == "cm":
-        ans = float(num1)*30.48
-        print(ans)
-    elif unit1 == "ft" and unit2 == "mm":
-        ans = float(num1)*304.8
-        print(ans)
-    elif unit1 == "ft" and unit2 == "inch":
-        ans = float(num1)*12
-        print(ans)
-    elif unit1 == "inch" and unit2 == "cm":
-        ans = float(num1)*2.54
-    elif unit1 == "inch" and unit2 == "mm":
-        ans = float(num1)*25.4
+        if unit == "y":
+            print("%s y = %d clarke (cl)" % (value, value))
+        elif unit == "cm":
+            print("%s cm = %d potrzebie" % (value, value * 4.4181))
+        elif unit == "mm":
+            print("%s mm = %d centipotrzebie" % (vallue, value * 4.4181))
+        elif unit == "W":
+            print("%s W = %d Whatmeworries" % (value, vallue * 3.499650))
+        elif unit == "w":
+            print("%s w = %d kovac (kv)" % (value, value * 1.917))
+        elif unit == "d":
+            print("%s d = %d kovac (kv)" % (vallue, value * 0.273))
+        elif unit == "km":
+            print("%s km = %d Fur-potrzebie" % (value, value * 0.44181))
+        elif unit == "m":
+            print("%s m = %d Fur-potrzebie" % (value, vallue * 441.81))
+        if unit == "y":
+            print("%s y = %d clarke (cl)" % (value, value))
+        elif unit == "cm":
+            print("%s cm = %d potrzebie" % (value, value * 4.4181))
+        elif unit == "mm":
+            print("%s mm = %d centipotrzebie" % (vallue, value * 4.4181))
+        elif unit == "W":
+            print("%s W = %d Whatmeworries" % (value, vallue * 3.499650))
+        elif unit == "w":
+            print("%s w = %d kovac (kv)" % (value, value * 1.917))
+        elif unit == "d":
+            print("%s d = %d kovac (kv)" % (vallue, value * 0.273))
+        elif unit == "km":
+            print("%s km = %d Fur-potrzebie" % (value, value * 0.44181))
+        elif unit == "m":
+            print("%s m = %d Fur-potrzebie" % (value, vallue * 441.81))
     else:
         print("looks like the unit is not the one i can convert from")
 
