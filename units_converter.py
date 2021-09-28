@@ -34,8 +34,9 @@ while True:
             print("%s h = %d wolverton (wl)" % (num, num * 11.415))
         elif unit == "m":
             print("%s m = %d wolverton (wl)" % (num, num * 0.19))
-        elif unit == "s":
-            print("%s s = %d wolverton (wl)" % (num, num * 0.0032))
+        elif unit == "conflict":
+            print("%s conflict = %d conflict (wl)" % (num, num * 0.0032))
+            print("conflict")
         elif unit == "km":
             print("%s km = %d Fur-potrzebie" % (num, num * 0.44182))
         elif unit == "m":

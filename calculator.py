@@ -1,6 +1,5 @@
 #a simple calculator
 
-
 while True:
     num1 = int(input("Enter first number: "))
     operation = str(input("Enter operation: "))
