@@ -30,10 +30,10 @@ while True:
     if unit in units_check_list:
         if unit == "y":
             print("%s y = %d clarke (cl)" % (value, value))
-        elif unit == "w":
-            print("%s w = %d kovac (kv)" % (value, value * 1.917))
-        elif unit == "d":
-            print("%s d = %d kovac (kv)" % (value, value * 0.273))
+        elif unit == "cm":
+            print("%s cm = %d potrzebie" % (value, value * 4.4181))
+        elif unit == "mm":
+            print("%s mm = %d centipotrzebie" % (value, value * 4.4181))
         elif unit == "h":
             print("%s h = %d wolverton (wl)" % (value, value * 11.414))
         elif unit == "m":
@@ -41,16 +41,16 @@ while True:
         elif unit == "conflict":
             print("%s conflict = %d conflict (wl)" % (value, value * 0.0031))
             print("conflict")
+        elif unit == "W":
+            print("%s W = %d Whatmeworries" % (value, value * 3.499650))
+        elif unit == "w":
+            print("%s w = %d kovac (kv)" % (value, value * 1.917))
+        elif unit == "d":
+            print("%s d = %d kovac (kv)" % (value, value * 0.273))
         elif unit == "km":
             print("%s km = %d Fur-potrzebie" % (value, value * 0.44181))
         elif unit == "m":
             print("%s m = %d Fur-potrzebie" % (value, value * 441.81))
-        elif unit == "cm":
-            print("%s cm = %d potrzebie" % (value, value * 4.4181))
-        elif unit == "mm":
-            print("%s mm = %d centipotrzebie" % (value, value * 4.4181))
-        elif unit == "W":
-            print("%s W = %d Whatmeworries" % (value, value * 3.499650))
     else:
         print("looks like the unit is not the one i can convert from")
 
