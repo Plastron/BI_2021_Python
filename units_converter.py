@@ -1,5 +1,5 @@
-#empty for now
 
+#some history
 print("Hello! This is a humorous unit converter that converts from the \"Potrzebie System of Weights and Measures\" \ndeveloped by 19-year-old Donald E. Knuth, later a famed computer scientist, \ninto the metric system units and vice versa. According to Knuth, \nthe basis of this new revolutionary system is the potrzebie, \nwhich equals the thickness of Mad issue 26, or 2.263348517438173216473 mm. \nYou can visit https://en.wikipedia.org/wiki/List_of_humorous_units_of_measurement#Potrzebie for more information")
 
 table_request = input("Do you want to see the Potrzebie table of units? (yes/no): ")
@@ -10,14 +10,15 @@ units_check_list = ["year", "month", "day", "hour", "minute", "second", "km", "m
 while True:
 
     print("You can convert time (y, w, d, h, m, s), length (km, m, cm, mm), and power (W). \nPlease enter the decimal number you want to convert, then whitespace, and then unit how it was shown in the previous sentence.")
+    #check if there is a whitespace
     try:
         num, unit = input("number unit").split(' ')
     except:
         print("looks like you forgot about the whitespace")
         continue
-
+    #check if number is decimal
     try:
-        num = int(num)
+        num = float(num)
     except:
         print("looks like your number is not decimal")
         continue
